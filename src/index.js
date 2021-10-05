@@ -38,10 +38,10 @@ app.delete('/user/:id', function(req,res){
 	if(userList.lenght > 0){
 		let index = userList.indexOf(req.params.id);
 		userList.splice(index,1);
-		res.status(200);
+		res.status(200).json({ok: true});
 	}
 	else{
-		res.status(204);
+		res.status(204).json({ok: true});
 	}
 });
 
