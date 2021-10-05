@@ -9,11 +9,11 @@ app.get('/', function(req,res){
 	res.send("Hello World!");
 });
 
-/*app.get('/users', function(req, res){
+app.get('/users', function(req, res){
 	res.json(userList);
 });
 
-app.get('/user/:id', function(req,res){
+/*app.get('/user/:id', function(req,res){
 	// userList.push(0);
 	const user = userList.find(usr => usr.id == req.params.id);
 	console.log(userList);
