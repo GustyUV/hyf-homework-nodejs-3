@@ -13,22 +13,22 @@ app.get('/users', function(req, res){
 	res.json(userList);
 });
 
-/*app.get('/user/:id', function(req,res){
+app.get('/user/:id', function(req,res){
 	// userList.push(0);
 	const user = userList.find(usr => usr.id == req.params.id);
 	console.log(userList);
 	res.json(user);
-});*/
+});
 
 // #endregion GET
 
 // #region POST
 
-/*app.post('/user', function(req,res){
+app.post('/user', function(req,res){
 	userList.push({id: 0});
 
 	res.json(userList);
-})*/
+})
 
 // #endregion POST
 
