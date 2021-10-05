@@ -32,6 +32,21 @@ app.post('/user', function(req,res){
 
 // #endregion POST
 
+// #region Delete
+
+app.delete('/user/:id', function(req,res){
+	if(userList.lenght > 0){
+		let index = userList.indexOf(req.params.id);
+		userList.splice(index,1);
+		res.status(200);
+	}
+	else{
+		res.status(204);
+	}
+});
+
+// #endregion Delete
+
 app.listen(3000, function(){
 	console.log("Server running");
 });
