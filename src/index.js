@@ -38,9 +38,9 @@ app.delete('/user/:id', function(req,res){
     if(userList.length > 0){
         index = userList.indexOf(req.params.id);
         userList.splice(index,1);
-        res.status(200).json({ ok: true });
+        res.status(202);//.json({ ok: true });
     } else {
-        res.status(204).json({ ok: true });
+        res.status(204);//.json({ ok: true });
     }    
 });
 
